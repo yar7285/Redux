@@ -46,7 +46,7 @@ class Modal extends React.Component {
 
 function mapStateToProps(state) {
     return {
-      modal: state.modal
+        modal: state.modal
     };
 }
 
