@@ -10,9 +10,9 @@ import EditModal from './edit-modal';
 class ListItem extends React.Component {
 
     static propTypes = {
-      id: PropTypes.number.isRequired,
-      name: PropTypes.string.isRequired,
-      dispatch: PropTypes.func
+        id: PropTypes.number.isRequired,
+        name: PropTypes.string.isRequired,
+        dispatch: PropTypes.func
     };
     constructor(props) {
         super(props);
