@@ -23,6 +23,7 @@ class ListPage extends React.Component {
                 <ListItem
                     key = {idx}
                     id = { item.id }
+                    youtube = { item.youtube }
                     name = { item.name }
                 />
             );

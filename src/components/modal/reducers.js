@@ -6,7 +6,6 @@ import { OPEN_MODAL, CLOSE_MODAL } from './actions';
 const initialState = {
     isOpen: false,
     title: 'Модальное окно',
-    btnText: 'OK',
     content: null
 };
 
