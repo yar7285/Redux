@@ -19,21 +19,21 @@ class ListPage extends React.Component {
         bindAll(this, ['renderItems']);
     }
     renderItems(item, idx) {
-            return (
-                <ListItem
-                    key = {idx}
-                    id = { item.id }
-                    youtube = { item.youtube }
-                    name = { item.name }
-                />
-            );
+        return (
+            <ListItem
+                key = {idx}
+                id = { item.id }
+                youtube = { item.youtube }
+                name = { item.name }
+            />
+        );
     }
     render() {
-            const {items} = this.props.list;
+        const {items} = this.props.list;
         return (
           <div className='row'>
               <div className='col-xs-12'>
-                <h3>List</h3>
+                <h3>Списо видео</h3>
                   <table className='table table-bordered table-hover'>
                       <thead>
                       <tr>
@@ -59,7 +59,7 @@ class ListPage extends React.Component {
 
 function mapStateToProps(state) {
     return {
-      list: state.list
+        list: state.list
     };
 }
 

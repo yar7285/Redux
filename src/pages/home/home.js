@@ -4,9 +4,9 @@ import Loader from '../../components/ui/loader/index';
 import { bindAll } from 'lodash';
 import { connect } from 'react-redux';
 import { addTodo,
-    likeTodo,
-    deleteTodo,
-    getTodos
+        likeTodo,
+        deleteTodo,
+        getTodos
 } from './actions';
 import classnames from 'classnames';
 import {LS} from '../../utils/index';
@@ -73,9 +73,8 @@ class HomePage extends React.Component {
             <div className='row-fluid b-home'>
                 <div className='col-xs-12'>
                     <ul>
-
                         {
-                            isLoading ? <Loader/> : todos.length !== 0 ? todos.map(this.renderTodos) : 'Елементов нет'
+                            isLoading ? <Loader/> : todos.length ? todos.map(this.renderTodos) : 'Елементов нет'
                         }
                     </ul>
                     <div className='col-xs-4'>
